@@ -17,6 +17,7 @@ class BankAccount:
 
     def display_account_info(self):
         print("Balance: $"+str(self.balance))
+        return self
 
     def yield_interest(self):
         if self.balance>0.00:
