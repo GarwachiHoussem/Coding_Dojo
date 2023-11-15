@@ -1,7 +1,7 @@
 // function myBirthYearFunc(){
 //     console.log("I was born in" + 1995);
 // }
-// myBirthYearFunc()
+// myBirthYearFunc();
 // myBirthYearFunc();
 // function myBirthYearFunc(birthYearInput){
 //     console.log("I was born in " + birthYearInput);

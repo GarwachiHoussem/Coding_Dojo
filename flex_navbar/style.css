@@ -1,0 +1,30 @@
+.nav{
+
+    display: flex;
+    background-color: #333333;
+    justify-content: space-between;
+
+}
+
+h1{
+    margin: 5px;
+    padding: 5px;
+    color: white;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+    gap:30px;
+    
+    list-style: none;
+    
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+button{
+    color: white;
+    background-color: #17A2B8;
+    box-shadow: 10px 5px solid black;
+}

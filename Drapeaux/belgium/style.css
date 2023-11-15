@@ -1,0 +1,22 @@
+div{
+   display: inline-block;
+}
+.body{
+    display: flex;
+}
+.black{
+    width: 200px;
+    height: 400px;
+    background-color:rgb(35,31,32);
+}
+
+.yellow{
+    width: 200px;
+    height: 400px;
+    background-color: rgb(255,242,0);
+}
+.red{
+    width: 200px;
+    height: 400px;
+    background-color: rgb(237,28,36);
+}

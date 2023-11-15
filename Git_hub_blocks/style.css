@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    height: 200px;
+}
+
+h1{
+    text-align: center;
+    font-weight: bolder;
+}
+.container{
+background-color: white;
+}
+.top-nav{
+
+    background-color: #64D0BE;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+
+}
+.second-nav{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #C69FB1;
+    margin: 20px;
+}
+
+.third-nav{
+display: flex;
+justify-content: space-between;
+background-color: white;
+}

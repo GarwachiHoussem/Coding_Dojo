@@ -1,0 +1,27 @@
+.absolute{
+    position: absolute;
+}
+.blue{
+    background-color: rgb(236,31,39);
+    height: 50px;
+    width: 700px;
+}
+
+.white{
+    background-color: white;
+    height: 50px;
+    width: 700px;
+    
+}
+.square{
+    position: absolute;
+    background-color: rgb(2,101,178);
+    height: 250px;
+    width: 290px;
+}
+.square p{
+    color: white;
+    font-size: 20px;
+    margin: 0px;
+    justify-content: space-evenly;
+}

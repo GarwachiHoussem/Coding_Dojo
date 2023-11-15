@@ -1,0 +1,38 @@
+.absolute{
+    position: absolute;
+}
+.blue{
+    background-color:rgb(123,174,221);
+    height: 50px;
+    width: 700px;
+}
+
+.white{
+    background-color: white;
+    height: 50px;
+    width: 700px;
+    
+}
+.square{
+    position: absolute;
+    background-color: rgb(123,174,221);
+    height: 250px;
+    width: 250px;
+}
+.ligne1{
+    position: absolute;
+    width: 250px;
+    height: 50px;
+    margin-top: 100px;
+    background-color: white;
+
+}
+
+.line2{
+    position: absolute;
+    height: 250px;
+    width: 50px;
+    margin-left: 100px;
+    background-color: white;
+
+}
