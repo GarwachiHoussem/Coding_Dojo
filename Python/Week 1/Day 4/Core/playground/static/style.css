@@ -1,0 +1,17 @@
+.container{
+    padding: 0px;
+    margin: 0auto;
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    flex-wrap: wrap
+}
+.gr{
+    width: 100px;
+    height: 80px;
+    border: 2px solid black;
+    border-radius: 15%;
+}
+
