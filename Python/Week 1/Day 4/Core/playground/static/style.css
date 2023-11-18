@@ -13,5 +13,11 @@
     height: 80px;
     border: 2px solid black;
     border-radius: 15%;
+    justify-content: center;
+    
+    
 }
 
+.title{
+    text-align: center;
+}
