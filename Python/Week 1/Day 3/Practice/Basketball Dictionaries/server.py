@@ -112,6 +112,9 @@ for player_info in players:
 # Print information for each Player instance in the new list
 for player in new_team:
     print(f"{player.name} - Team: {player.team}, Age: {player.age}")
+    
+    
+    /////
 
 
 
