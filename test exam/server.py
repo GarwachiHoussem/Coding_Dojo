@@ -1,8 +1,8 @@
 from flask_app import app
 
 #! All contollers must be imported HERE
-# from flask_app.controllers import users
+from flask_app.controllers import users, parties
 
 
 if __name__ == "__main__":
-    app.run(debug=True, Port=5001)
+    app.run(debug=True)
