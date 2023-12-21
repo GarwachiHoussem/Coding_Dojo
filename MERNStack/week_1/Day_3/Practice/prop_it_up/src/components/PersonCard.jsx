@@ -1,19 +1,20 @@
-import React from 'react'
+import React, { useState } from "react";
 
-const PersonCard = ({props}) => {
-
-    const value=props
-
-  return (
+const PersonCard = (props) => {
+const { firstName, lastName, age, hairColor } = props;
+const [stateAge, setStateAge] = useState(age);
+return (
     <div>
-        {JSON.stringify(value)}
-        <h1>{value.lastName},{value.firstName} </h1>
-        <p>age :{value.age}</p>
-        <p>hair color :{value.hairColor}</p>
-        <button>birthday{value.birthday}</button>
-
+    <h2>
+        {lastName}, {firstName}
+    </h2>
+    <p>Age: {stateAge}</p>
+    <p>Hair Color: {hairColor}</p>
+    <button onClick={() => setStateAge(stateAge + 1)}>
+        Birthday Button for {firstName} {lastName}
+    </button>
     </div>
-  )
-}
+);
+};
 
-export default PersonCard
+export default PersonCard;
