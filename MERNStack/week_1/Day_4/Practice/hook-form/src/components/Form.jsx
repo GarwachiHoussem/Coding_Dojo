@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
-
+// Class ---> App.jsx---><>
+    //   <Form />
+    //   </>
 const Form = () => {
 
     const [ firstname, setFirstname ] = useState('')
@@ -34,7 +36,7 @@ const Form = () => {
             </div>
             <div>
                 <label> confirmpassword : </label> 
-                <input type="confirmpassword" value={confirmpassword} onChange={ (e) => Setconfirmpassword(e.target.value) } />
+                <input type="password" value={confirmpassword} onChange={ (e) => Setconfirmpassword(e.target.value) } />
             </div>
         </form>
         <div>
