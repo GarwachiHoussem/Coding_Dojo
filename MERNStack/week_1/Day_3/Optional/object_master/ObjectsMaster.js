@@ -34,6 +34,13 @@ const pokémon = Object.freeze([
     // const divisibleBy3 = pokémon.filter( p =>p.id %3==0);
     // console.log(divisibleBy3)
 
+    // const divisibleby5 = pokémon.filter (p => p.id %5 ==0 );
+    // console.log(divisibleby5);
+    
+    // const divisibleby5 = pokémon.filter (p => p.id %5 ==0 ).map (p=> p.name);
+    // console.log(divisibleby5)
+    
+
     // const firetype= pokémon.filter(p=>p.types.includes("fire"));
     // console.log(firetype);
 
@@ -53,11 +60,10 @@ const pokémon = Object.freeze([
         // console.log(flying);
         
 
-        const normalcount = pokémon.filter(p=>p.types.includes("normal")).length
-        console.log(normalcount);
+        // const normalcount = pokémon.filter(p=>p.types.includes("normal")).length
+        // console.log(normalcount);
 
 
-   
 
 
 
