@@ -1,11 +1,11 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
 const JokeSchema = new mongoose.Schema(
-    {
+  {
     setup: String,
     punchline: String,
-},
-{timestamp: true}
+  },
+  { timestamps: true }
 );
 
 const Joke = mongoose.model("Joke", JokeSchema);
