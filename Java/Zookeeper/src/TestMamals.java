@@ -5,17 +5,17 @@ public class TestMamals {
 		
 		// testing mammals
 		
-		Mamals mamal1 = new Mamals(100);
+		Mamals mamal1 = new Mamals();
 		
 		mamal1.displayEnergy();
 		
 		
 		// testing Gorilla
-		Gorilla gorilla = new Gorilla();
+		Gorilla gorilla1 = new Gorilla();
 		
-		gorilla.climb();
-		gorilla.eatBananas();
-		gorilla.throwSomething();
+		gorilla1.climb();
+		gorilla1.eatBananas();
+		gorilla1.throwSomething();
 		
 		
 	

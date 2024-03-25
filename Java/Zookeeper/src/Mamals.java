@@ -3,7 +3,7 @@ public class  Mamals {
 	
 	// Member variables
 	
-	int energy;
+	int energy=100;
 	
 	
 	
@@ -16,8 +16,9 @@ public class  Mamals {
 	// Constructor (all-args)
 	
 	public Mamals(int energy) {
+		super();
 		
-		this.energy = 100;
+		this.energy = energy;
 	}
 	
 	// Method to display energy level
