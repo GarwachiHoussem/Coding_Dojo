@@ -17,7 +17,15 @@ public class TestMamals {
 		gorilla1.eatBananas();
 		gorilla1.throwSomething();
 		
+		// testing Bat
+		Bat bat = new Bat();
+		bat.fly();
+		bat.eatHumans();
+		bat.attackTown();
 		
+		
+		
+
 	
 
 	}

@@ -9,19 +9,21 @@ public class Gorilla extends Mamals {
 	}
 	// Methods
 	public int throwSomething() {
-		System.out.println("Gorilla throw something" + this.energy );
-		return this.energy -= 5;
-		
-		
+	    this.energy -= 5;
+	    System.out.println("Gorilla throws something. Energy remaining: " + this.energy);
+	    return this.energy;
 	}
+
 	public int eatBananas() {
-		System.out.println("gorilla's satisfaction" + this.energy);
-		return this.energy += 10;
+		this.energy +=10;
+		System.out.println("gorilla's satisfaction " + this.energy);
+		return this.energy ;
 		
 	}
 	public int climb() {
-		System.out.println("gorilla has climbed a tree" + this.energy);
-		return this.energy -= 10;
+		this.energy -= 10;
+		System.out.println("gorilla has climbed a tree " + this.energy);
+		return this.energy;
 	}
 
 }
