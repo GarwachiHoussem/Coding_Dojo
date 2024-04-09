@@ -1,0 +1,1 @@
+alert("This the " + document.title.toLowerCase() + " Template")
