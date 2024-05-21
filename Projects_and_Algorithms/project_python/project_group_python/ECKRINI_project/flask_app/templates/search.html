@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Results</title>
+    <!-- Bootstrap CSS CDN link -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap JavaScript CDN link -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1>Search Results</h1>
+        <table class="table table-bordered table-striped">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Car Model</th>
+                    <th>Make</th>
+                    <th>Year</th>
+                    <th>Price</th>
+                    <th>Style</th>
+                    <th>Condition</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                {% for i in range(cars|length) %}
+                    <tr>
+                        <td>{{ cars[i].cars_model }}</td>
+                        <td>{{ cars[i].cars_make }}</td>
+                        <td>{{ cars[i].cars_year }}</td>
+                        <td>{{ cars[i].cars_price }}</td>
+                        <td>{{ cars[i].cars_style }}</td>
+                        <td>{{ cars[i].cars_condition }}</td>
+                        <td><a href="/booking">Book Car</a></td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

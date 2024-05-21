@@ -1,0 +1,72 @@
+{%extends 'base.html'%}
+{%block content%}
+<section class="welcome-hero">
+
+
+    <div class="container">
+        <div class="welcome-hero-txt">
+            <h2>dashboard agency</h2>
+
+        </div>
+    </div>
+
+</section>
+<section class="brand">
+
+
+    <div class="container mt-3">
+
+        <div class="d-flex justify-content-between align-items-center">
+            <h5>New agency cars CARS</h5>
+            <div style="margin-left: 950px; justify-content: space-around;
+            display: flex;">
+                <a href="/new/car" class="btn btn-success">Add </a>
+                <form action="/logout" method="post">
+                    <input href="/logout" class="btn btn-danger" value="logout" type="submit"></input>
+                </form>
+            </div>
+
+        </div>
+        <table class="table">
+            <thead>
+                <th>Model</th>
+                <th>Make</th>
+                <th>Condition</th>
+                <th>Price</th>
+                <th>Year</th>
+
+
+            </thead>
+            <tbody>
+                {% for car in results %}
+                <tr>
+                    <td style="color: green;">{{car.model}}</td>
+                    <td>{{car.make}}</td>
+                    <td>{{car.condition}}</td>
+                    <td>{{car.price}}</td>
+                    <td>{{car.year}}</td>
+                    <td style="display:flex; justify-content: space-around;">
+                        <form action="/carsinag/{{car.id}}/destroy" method="post">
+                            <input type="submit" value="delete" class="btn btn-primary btn-block text-nowrap">
+                        </form>
+                        <a href="/contact" class="btn btn-success">Contact client </a>
+
+
+                    </td>
+
+
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+    </div>
+
+</section><!--/brand-->
+<!--brand end -->
+
+<!--blog start -->
+<section id="blog" class="blog"></section><!--/.blog-->
+<!--blog end -->
+
+{% endblock %}

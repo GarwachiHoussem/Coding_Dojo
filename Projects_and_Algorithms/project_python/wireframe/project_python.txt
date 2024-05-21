@@ -1,0 +1,6 @@
+This project proposes the idea of a car rental website, as it provides a service for the customer to choose the car he wants to rent via payment card. All the information learned in the lessons has been included in Python.
+It was prepared by a team of four people:
+-Houssem Garwachi
+-Sayef Melliti
+-Khalil Meddeb
+-Fares Alaya

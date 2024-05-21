@@ -1,0 +1,77 @@
+{%extends 'base.html'%}
+{%block content%}
+
+
+
+<section id="home" class="welcome-hero">
+    <div class="container">
+        <div class="welcome-hero-txt">
+            <!-- <h2>rent your desired car in reasonable price</h2> -->
+            <h2>MY SELECTION</h2>
+
+            <!-- <button class="welcome-btn" onclick="window.location.href='#'">contact us</button> -->
+        </div>
+    </div>
+
+
+
+</section>
+<section class="brand">
+
+
+    <div class="container mt-3">
+
+        <div class="d-flex justify-content-between align-items-center">
+            <h5>MY RENTED CARS</h5>
+            <div class="" style="margin-left: 950px; justify-content: space-around;
+            display: flex;">
+
+                <form action="/logout" method="post">
+                    <input href="/logout" class="btn btn-danger " value="logout" type="submit"></input>
+                </form>
+            </div>
+
+        </div>
+        <table class="table">
+            <thead>
+                <th>Status</th>
+                <th>Start time</th>
+                <th>End time</th>
+                <th>Action</th>
+
+
+            </thead>
+            <tbody>
+                {% for car in results %}
+                <tr>
+                    <td style="color: green;">{{car.status}}</td>
+                    <td>{{car.start_time}}</td>
+                    <td>{{car.end_time}}</td>
+                    <td style="display:flex; justify-content: space-around;">
+                        <form action="/rent/{{car.id}}/destroy" method="post">
+                            <input type="submit" value="delete" class="btn btn-danger btn-block text-nowrap">
+                        </form>
+                        <form action="/create-checkout-session" method="post">
+                            <button type="submit" class="btn btn-success btn-block text-nowrap"
+                                id="checkout-button">rent now</button>
+
+                        </form>
+
+                    </td>
+
+
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+    </div>
+
+</section><!--/brand-->
+<!--brand end -->
+
+<!--blog start -->
+<section id="blog" class="blog"></section><!--/.blog-->
+<!--blog end -->
+
+{% endblock %}

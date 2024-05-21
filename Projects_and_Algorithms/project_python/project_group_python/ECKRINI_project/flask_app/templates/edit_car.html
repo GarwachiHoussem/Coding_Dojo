@@ -1,0 +1,64 @@
+{%extends 'base.html'%}
+{%block content%}
+<!--welcome-hero start -->
+<section id="home" class="welcome-hero">
+
+
+    <div class="container">
+        <div class="welcome-hero-txt">
+            <h2>add a car</h2>
+
+        </div>
+    </div>
+
+</section><!--/.welcome-hero-->
+<!--welcome-hero end -->
+<section class="brand">
+    <div class="container-fluid py-5">
+        <div class="container pt-5 pb-3">
+            <h1 class="display-4 text-uppercase text-center mb-5">add a car</h1>
+            <div class="row">
+                <div class="col-lg-7 mb-2">
+                    <div class="contact-form bg-light mb-4" style="padding: 30px;">
+                        <form action="/cars/{{car.id}}/update" method="post">
+
+                            <div class="row">
+                                <div class="col-6 form-group">
+
+                                    <input type="text" class="form-control p-4" name="cars_model"
+                                        placeholder="Car model" value="{{car.cars_model}}">
+                                </div>
+                                <div class="col-6 form-group">
+                                    <input type="text" class="form-control p-4" name="cars_make" placeholder="Car make"
+                                        value="{{car.cars_make}}">
+                                </div>
+                                <div class="col-6 form-group">
+                                    <input type="number" class="form-control p-4" name="cars_year"
+                                        placeholder="Car year" value="{{car.cars_year}}">
+                                </div>
+                                <div class="col-6 form-group">
+                                    <input type="number" class="form-control p-4" name="cars_price"
+                                        placeholder="Car price" value="{{car.cars_price}}">
+                                </div>
+                                <div class="col-6 form-group">
+                                    <input type="text" class="form-control p-4" name="cars_style"
+                                        placeholder="Car style" value="{{car.cars_style}}">
+                                </div>
+                                <div class="col-6 form-group">
+                                    <input type="email" class="form-control p-4" placeholder="Car condition"
+                                        required="required">
+                                </div>
+                            </div>
+
+
+                            <input type="submit" value="Add Car" class="btn btn-primary py-3 px-5">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+{% endblock %}
